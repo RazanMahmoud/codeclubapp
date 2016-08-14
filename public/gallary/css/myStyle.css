@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);/*english font*/
+
+.gfont
+{
+    font-family: 'Audiowide', cursive;
+}
+._gallary
+{
+    padding: 30px 10px;
+    text-align: center;
+    min-height: 400px;
+    background-color: #111;
+}
+._gallary h1{
+    color: #12b2d8;
+    margin-top: 0px;
+    margin: 45px auto 20px;
+    font-size: 39px;    
+}

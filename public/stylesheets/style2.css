@@ -1,0 +1,666 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);/*english font*/
+body
+{
+    padding-top: 70px;
+    background-color: #f9f9f9 ;
+    font-family: sans-serif;
+    
+}
+
+/* google font */
+.gfont
+{
+    font-family: 'Audiowide', cursive;
+}
+
+  /***********************  BootStrap Overriding ********************/
+ /******************************************************************/
+/************************    NAVBAR    ****************************/
+
+/* Active Link*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+   background-color: rgba(18, 178, 216, 0.92);
+
+}
+
+.navbar .nav li a:hover
+{
+    color: rgba(18, 178, 216, 0.92);
+}
+.navbar .nav li a.active
+{
+    background-color: rgba(18, 178, 216, 0.92);
+    color: aliceblue;
+        
+}
+.navbar .nav li.dropdown a:hover
+{
+    color: aliceblue;
+}
+/*Main Navbar */
+.navbar
+{
+    min-height: 70px;
+}
+
+/* Navbar Link*/
+.navbar-inverse .navbar-nav > li > a
+{
+    
+    color: #BBB;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    
+}
+
+
+
+
+/* Navbar Brand */
+.navbar-inverse .navbar-brand
+{
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+    padding: 15px;
+    line-height: 30px;
+    transition: font-size .5s;
+}
+/* Brand name */
+.navbar-inverse .navbar-brand span
+{
+    color: rgba(18, 178, 216, 0.92);
+}
+/* Brand name */
+.navbar-inverse .navbar-brand .braces
+{
+    font-size: 36px;
+    line-height: 36px
+}
+
+/*DropDown Menue */
+.dropdown-menu
+{
+ background-color: #333;
+ border-top: 3px rgba(18, 178, 216, 0.92) solid;
+ min-width: 200px;
+
+}
+
+.dropdown-menu > li > a
+{
+    color: #d6d6d6;
+    padding: 6px 20px;
+    -webkit-transition:padding 0.5s ease;
+    -moz-transition:padding 0.5s ease;
+    -o-transition:padding 0.5s ease;
+    transition:padding 0.5s ease;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+    background-color: #12b1d9;
+    color: #fff;
+    padding-left: 25px;
+}
+
+.navbar-right .dropdown-menu
+{
+    left: 0;
+    right: auto;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus
+{
+    background-color: #12b1d9;
+}
+
+
+/* Divider color */
+.dropdown-menu .divider
+{
+    background-color: #236C91;
+}
+
+/* Navbar Toggle */
+.navbar-toggle
+{
+   margin-top: 18px;
+}
+
+.collapse .form-control
+{
+ margin-top: 11px;
+ margin-left: 15px    
+}
+.btn-default
+{
+ margin-top: 11px;
+ margin-left: 3px    
+}
+
+/************ language flag ****************/
+.l-nav
+{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.l-nav a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ccc;
+}
+.l-nav a img
+{
+    width: 27px;
+    height: 27px;
+}
+/*******************************************/
+/******************************************************/
+/**************** Carousal ***************************/
+
+.ss
+{
+    height: 250px;
+    width: 100%;
+    align-content: center;
+   
+
+}
+
+/* Indicator    (circles)*/
+
+.carousel-indicators li
+{
+    height: 14px;
+    width: 14px;
+    border: 1px solid #12b1d9;
+}
+
+.carousel-indicators .active
+{
+    height: 16px;
+    width: 16px;
+    border: 1px solid white;
+    background-color: #12b1d9;
+ 
+}
+
+.carousel-indicators
+{
+    bottom: 3px;
+    
+}
+
+/*  Carousal contrl (left,right Arrows)   */
+.carousel-control
+{
+    color: #12b1d9;
+}
+.carousel-control:hover,
+.carousel-control:focus
+{
+color: #06cdff;
+
+}
+
+/*  Carousal Text (On picture)*/
+.back-hov
+{
+  background-color: rgba(3,3,3,0.3);
+    margin-bottom: 20px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+/* End overridding |Bootstrap */
+
+/*********************************************************************************/
+
+
+
+/* Start section  Contact-US */
+
+.contact_us
+{
+    background: url('../image/contactUs_back.jpg') no-repeat;
+    min-height: 600px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.contact_us .contact_hov
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #FFF;
+    background: rgba(3,3,3,0.5);
+
+}
+.contact_us p
+{
+    margin-bottom: 50px;
+}
+.contact_us textarea
+{
+    height: 108px;
+    color: red;
+}
+.contact_us input[type="text"],
+.contact_us textarea
+{
+    background: rgba(82,78,78,0.7);
+    color: #FFF;
+    
+}
+
+/* End section  Contact-US */
+
+/**************** start slider section ******************/
+.slider
+{
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    position: relative;
+}
+.cb-slideshow
+{
+    position: static;
+    width: 100%;
+    
+}
+
+/**************** End slider section ******************/
+
+/**************** Start login Modal form  ******************/
+.modal-content
+{
+    margin-top: 150px;
+}
+/**************** End login Modal  section ******************/
+
+
+/**************** start top5 section ******************/
+.top5
+{
+    margin-top: 60px;
+
+}
+.top5 h1
+{
+    margin-top: 20px;
+   /* background-color: #12B1D9;*/
+    color: #12B1D9;
+    margin-bottom: 25px;
+}
+.top5 .flow_chart
+{
+    height: 100%;
+    color: #f9f9f9;
+    background-color: #343434;
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+
+/* start progress bar */
+.progress-bar-vertical {
+  width: 40px;
+  height: 380px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  float: left;
+}
+
+.progress-bar-vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+}
+.par
+{
+    font-size: 22px;
+    transform: rotate(-90deg);
+    margin: 10px auto
+}
+
+/* end progress bar */
+
+/* start student of the year */
+.stdOfYear
+{
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+
+}
+.stdOfYear .stdImg
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+/* end student of the year */
+/**************** End top5 section ******************/
+
+/**************** Start Event section ******************/
+.event h1
+{
+    margin-top: 140px;
+   /* background-color: #12B1D9;*/
+    color: #12B1D9;
+    margin-bottom: 75px;
+}
+.event .panel
+{
+    margin-bottom: 45px
+}
+.panel-body .eventBox
+{
+    color: #333;
+    padding: 15px;
+}
+.panel-body .eventBox p
+{
+    text-align: left;
+    
+}
+.panel-body .eventBox p span
+
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.panel-body .eventBox img
+{
+    height: 220px;
+    width: 100%;
+    border-radius: 25px;
+}
+/**************** End Event section ******************/
+
+
+/**************** start contact us section ******************/
+
+/* Start section  Contact-US */
+
+.contact_us
+{
+    background: url('../images/contactUs_back.jpg') no-repeat;
+    min-height: 600px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.contact_us .contact_hov
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #FFF;
+    background: rgba(3,3,3,0.5);
+
+}
+.contact_us p
+{
+    margin-bottom: 50px;
+}
+.contact_us textarea
+{
+    height: 108px;
+    color: red;
+}
+.contact_us input[type="text"],
+.contact_us textarea
+{
+    background: rgba(82,78,78,0.7);
+    color: #FFF;
+    
+}
+
+/* End section  Contact-US */
+
+
+/**************** End contact us section ******************/
+
+
+/* Start section Footer */
+.footer
+{
+    background: #000;
+    color: #AAA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc
+}
+.footer a
+{
+    color: #AAA;
+}
+.footer a:hover
+{
+    color: #FFF;
+}
+.footer h3
+{
+    color: #12b1d9;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+.footer .three-cols
+{
+    overflow: hidden;
+}
+.footer .three-cols li
+{
+    width: 33.3333%;
+    float: left;
+    margin: 5px 0;
+}
+.footer .social-clos
+{
+    overflow: hidden;
+    margin: 20px 0 10px;
+    
+}
+.footer .social-cols li
+{
+    float: left;
+    padding-right: 35px;
+}
+.footer .social-cols .z
+{
+    font-size: 33px;
+    opacity: 0.7;
+}
+.footer .social-cols .z:hover
+{
+    opacity: 1;
+}
+
+/*********** Articles section* * */
+
+.footer .article
+{
+    margin-top: 5px;
+}
+.footer a
+{
+    text-decoration: none;
+}
+
+.footer .article a img
+{
+    width:  60px;
+    height: 60px;
+    margin: 7px;
+    border: 1px solid transparent;
+}
+
+.footer .article a img:hover
+{
+    border: 2px solid #12b1d9;
+}
+
+.footer .article a
+{
+    text-underline-position: right;
+    width:50%;
+}
+/* Latest Articles */
+.footer .latest-work
+{
+    overflow: hidden;
+}
+.footer .footer-table img
+{
+    width: 120px;
+    height: 75px;
+    border: 2px solid white;
+    margin: 2px;
+    opacity: 0.7;
+
+}
+.footer .footer-table img:hover
+{
+    opacity: 1;
+}
+.cpyright
+{
+    padding: 20px 0 15px;
+    font-size: 16px;
+    color: #DDD;
+    background-color: #888;
+}
+/* End section Footer */
+
+
+/* Start Section loading page */
+
+.loading
+{
+    background-color: #333;
+    color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 250px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #12b1d9;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+/* End Section loading page */
+
+
+/*  *************** Media Query   ******************* */
+@media screen and (min-width: 992px) {
+    .navbar-left
+    {
+        padding-left: 100px;
+    }
+   
+}
+
+@media screen and (max-width: 320px) {
+    
+    .navbar-inverse .navbar-brand
+    {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 600px){
+     .back-hov,
+    .carousel-indicators
+    {
+        display: none;
+    }
+}
+@media (max-width: 1220px){
+    .panel-body .eventBox img
+    {
+        width: 180px;
+    }
+    
+    .cb-slideshow li div h3
+    {
+        font-size: 55px;
+    }
+    .stdOfYear
+    {
+        margin-top: 50px
+    }
+}
+@media (min-width: 1600px){
+    .slider
+    {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px)
+{
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
+    {
+        margin-left: -20px;
+    }
+    .navbar-inverse .navbar-brand
+    {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,232 @@
+body
+{
+    font-family: 'JF Flat Regular',Sans-Serif;
+}
+
+/****************Start carousal *****************/
+.ss
+{
+    height: 250px;
+    width: 100%;
+    align-content: center;
+   
+
+}
+
+
+
+/*
+.CarImg
+{
+    width: auto;
+    height: 320px;
+    max-height: 320px;
+}
+*/
+/* Indicator    (circles)*/
+/*************** start language flag*****************/
+.r-nav
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.r-nav a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+.r-nav a img
+{
+    width: 37px;
+    height: 27px;
+    padding-right: 10px;
+}
+/****************End language flag ****************/
+.carousel-indicators li
+{
+    height: 14px;
+    width: 14px;
+    border: 1px solid #12b1d9;
+}
+
+.carousel-indicators .active
+{
+    height: 16px;
+    width: 16px;
+    border: 1px solid white;
+    background-color: #12b1d9;
+ 
+}
+
+.carousel-indicators
+{
+    bottom: 3px;
+    
+}
+
+/*  Carousal contrl (left,right Arrows)   */
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);/*arabic font*/
+
+.ar_font
+{
+    font-family: 'Droid Arabic Kufi',serif;
+}
+
+.carousel-control
+{
+    color: #12b1d9;
+}
+.carousel-control:hover,
+.carousel-control:focus
+{
+color: #06cdff;
+
+}
+
+/*  Carousal Text (On picture)*/
+
+.back-hov
+{
+  background-color: rgba(3,3,3,0.3);
+    bottom: 45%;
+    border-radius: 50px;
+    color: #fff;
+    padding: 7px;
+}
+
+.carousel
+{
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .item img
+{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.top5
+{
+    text-align: center;
+    padding: 15px;
+}
+
+.std_ar_name ol li
+{
+    padding-left: 55px;
+    font-size: 17px;
+}
+
+.carousel-inner .item
+{
+    background-size: cover;
+}
+
+.top5 h1,
+.top5 .flow_chart h3
+{
+    text-align: center;
+}
+
+/* Start Login Modal form */
+.modal-content
+{
+    margin-top: 150px;
+    direction: rtl
+}
+/* End Login Modal form */
+/**************** Start Event section ******************/
+.event .panel-body .eventBox p
+{
+    text-align: right;
+    font-size: 16px;
+    font-family: verdana;
+}
+/**************** End Event section ******************/
+
+/***************** Media Query ***********/
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .navbar-left
+    {
+        padding-left: 25px
+    }
+   /* .std_ar_name ol li
+    {
+        padding-left: 55px;
+    }*/
+}
+
+@media (min-width: 1190px) 
+{
+    .navbar-left
+    {
+        padding-left: 400px
+    }
+    .slider
+    {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    
+}
+
+/*@media (min-width: 1500px) 
+{
+    .back-hov
+    {
+        display: none;
+    } 
+}*/
+
+@media (max-width: 991px)
+{
+    .panel-body .eventBox img
+    {
+        width: 200px;
+    }
+    .top5
+    {
+        text-align: right;
+    }
+    .std_ar_name ol li
+    {
+        padding-left: 0px;
+    }
+    .back-hov
+    {
+        bottom: 22%;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:991)
+{    
+    .navbar-inverse .navbar-brand
+    {
+        font-size: 22px;
+    }
+}
+@media (max-width: 666px)
+{
+    .back-hov
+    {
+        bottom: 20%;
+    }
+    .slider
+    {
+        height: 100% !important;
+    }
+    .flow_chart
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+/* **************** End carousal *******************/

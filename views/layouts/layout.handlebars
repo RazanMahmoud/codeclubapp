@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Codeclub</title>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+      <meta charset="UTF-8">
+    <!-- IE_meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--mobile compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+
+    <!-- Start Css3 slider -->
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="/stylesheets/demo.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style3.css" />
+        <script type="text/javascript" src="/javascripts/modernizr.custom.86080.js"></script>
+    <!-- End Css3 slider -->
+   
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style2.css"/>
+    <link rel="stylesheet" href="/stylesheets/rtl.css"/>
+    <link rel="stylesheet" href="/stylesheets/media.css"/>
+    <link rel="stylesheet" href="/stylesheets/animate.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+  
+
+    <script src="/javascripts/jquery-1.11.2.min.js"></script>
+
+	
+</head>
+<body ng-controller = 'AppCtrl'>
+  <a name="homeAnchor"></a>
+    <!-- ****************************  Start NavBar *****************-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container gfont">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#My_nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="braces">&#123;</span>Code<span>Club</span><span class="braces">&#125;</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="My_nav">
+      <ul class="nav navbar-nav navbar-left">
+       {{#if user}}
+              
+              <li class="active"><a href="#homeAnchor" class="smoothScroll">Home<span class="sr-only">(current)</span>
+
+            </a></li>
+            <li><a href="#stdAnchor" class="smoothScroll">Student</a></li>
+        <li><a href="#nxtEvntAnchor" class="smoothScroll">Events</a></li>
+         <li><a href="gallary/gallary.html">Gallary</a></li>
+          <li class="visible-xs"><a href="index_ar.html">العربية</a></li>
+              <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
+              <li role="presentation"><a href="/users/login">Login</a></li>
+              <li role="presentation"><a href="/users/register">Register</a></li>
+              <li><a href="contact/contact.html">Contact</a></li> 
+        <li class="visible-xs"><a href="index_ar.html">العربية</a></li>
+            {{/if}}
+      </ul>
+        
+      <div class="l-nav hidden-xs">
+          <a href="index_ar.html"><img src="/images/lang/Saudi-Arabia-Flag-icon.png"></br>العربية</a>
+      </div>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- ****************************  End NavBar *****************-->
+     <div class="row">
+        <div class="col-lg-12">
+          {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+          
+          {{{body}}}
+        </div>
+
+        
+      </div>
+
+   
+<!-- Start Section footer   -->
+<section class="footer hinge">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4  col-sm-6 col-xs-12">
+                <h3>Site map</h3>
+                <ul class="list-unstyled three-cols">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Company</li></a>
+                <a href="#"><li>Code</li></a>
+                <a href="#"><li>Design</li></a>
+                <a href="#"><li>Host</li></a>
+                <a href="#"><li>Solutions</li></a>
+                <a href="#"><li>Site map</li></a>
+                <a href="#"><li>Contact</li></a>
+                </ul>
+                <ul class="list-unstyled social-cols">
+                <li><a href="#"><i class="fa fa-facebook-square mn z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square mn1 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-rss mn3 z" ></i></a></li>    
+                <li><a href="#"><i class="fa fa-youtube-square mn2 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square mn3 z" ></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 article">
+                <h3>Latest Articles</h3>
+                <ul class="list-unstyled">
+                <a href="#"><li><img src="/images/footer/f1.jpg" class="img-circle"><span>Gaza Children.
+                    </a></span></li>
+                <a href="#"><li><img src="/images/footer/f3.jpg" class="img-circle"><span>Gaza Stripe.
+                    </span></li></a>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 latest-work">
+            <h3>Our Latest Events</h3>
+                <table class="footer-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="/images/footer/scenic.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="/images/footer/eco.jpg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="#"><img src="/images/footer/safety.jpg"></a>
+                        </td>
+                        <td>
+                        <a href="#"><img src="/images/footer/speed.jpg"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+<div class="text-center cpyright">
+    <span >All Right Reserved &copy; <b> Y.Jbour</b>  2016</span>
+</div>
+
+<!-- End Section footer   -->
+
+<!-- Start Section loading   >
+<section class="loading">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+</section>
+
+
+<!-- End Section loading   -->
+
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/myScript.js"></script>
+<script src="/javascripts/jquery.js"></script>
+<script src="/javascripts/smoothscroll.js"></script>
+
+<script src="javascripts/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+
+</body>
+</html>

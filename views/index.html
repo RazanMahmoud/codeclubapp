@@ -1,0 +1,510 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- IE_meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--mobile compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+
+    <!-- Start Css3 slider -->
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="stylesheets/demo.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/style3.css" />
+        <script type="text/javascript" src="javascripts/modernizr.custom.86080.js"></script>
+    <!-- End Css3 slider -->
+   
+    <link rel="stylesheet" href="stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css"/>
+    <link rel="stylesheet" href="stylesheets/style2.css"/>
+    <link rel="stylesheet" href="stylesheets/rtl.css"/>
+    <link rel="stylesheet" href="stylesheets/media.css"/>
+    <link rel="stylesheet" href="stylesheets/animate.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+  
+
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+
+    
+</head>
+
+<body ng-controller = 'AppCtrl'>
+  <a name="homeAnchor"></a>
+    <!-- ****************************  Start NavBar *****************-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container gfont">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#My_nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="braces">&#123;</span>Code<span>Club</span><span class="braces">&#125;</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="My_nav">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#homeAnchor" class="smoothScroll">Home<span class="sr-only">(current)</span>
+            </a></li>
+        <li><a href="#stdAnchor" class="smoothScroll">Student</a></li>
+        <li><a href="#nxtEvntAnchor" class="smoothScroll">Events</a></li>
+        <li><a href="gallary/gallary.html">Gallary</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+             aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">login</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal1">Register</a></li>
+            <li><a href="#">my profile</a></li>
+          </ul>
+        </li>
+        <li><a href="contact/contact.html">Contact</a></li> 
+        <li class="visible-xs"><a href="index_ar.html">العربية</a></li> 
+      </ul>
+        
+      <div class="l-nav hidden-xs">
+          <a href="index_ar.html"><img src="images/lang/Saudi-Arabia-Flag-icon.png"></br>العربية</a>
+      </div>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- ****************************  End NavBar *****************-->
+    <!--************ Login Modal *************-->
+        <div class="modal fade" tabindex="-1" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+            <h3>Login to CodeClub.com</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action='/login' name="login_form">
+              <p><input type="text" class="span3" name="name" id="email" placeholder="Email"></p>
+              <p><input type="password" class="span3" name="password" placeholder="Password"></p>
+              <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            New To CodeClub.com?
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+   
+    <!--************ Login Modal *************-->
+    <!--************ Register Modal *************-->
+       <div class="modal fade" tabindex="-1" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+            <h3>Register</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action='/register' name="Register_form">
+      <div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr" ng-model="user.name" name="username">
+</div>
+                <div class="form-group">
+      <label for="usr">Email:</label>
+    <input type="email" class="form-control" name="email" id="exampleInputEmail1" ng-model="user.email" >
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </div>
+        <div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" name="password" id="pwd" ng-model="user.password">
+</div>
+    
+                
+    
+              <p><button type="submit" class="btn btn-primary" >Register</button>
+                
+              </p>
+            </form>
+          </div>
+          
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <!--************ Register Modal *************-->
+    
+    
+    <!-- ************************ Start Slider  ************************ -->
+<section class="slider hidden-xs">
+    <div class="container-fluid " style="width:100%;height=100%">
+        <ul class="cb-slideshow">  
+            <li>
+                <span>Image xyz</span>
+                <div>
+                    <h3>Welcome at Code Club</h3>
+                </div>
+            </li>
+            <li><span>Image 02</span><div><h3>Algorithm Learning</h3></div></li>
+            <li><span>Image 03</span><div><h3>Scalable Code Writing</h3></div></li>
+            <li><span>Image 04</span><div><h3>Drawing Skills</h3></div></li>
+            <li><span>Image 05</span><div><h3>Game Competition</h3></div></li>
+            <li><span>Image 06</span><div><h3>Team Work</h3></div></li> 
+        </ul>   
+    </div>
+    <a href="#" class="down-btn"></a>
+</section>
+    
+    <!-- ************************ End Slider  ************************ -->
+
+    <!-- ************************ Start top 10  ************************ -->
+<a name="stdAnchor"></a>
+    <h2></h2>
+<section class="top5">
+    <div class="container">
+        <div class="row">
+            </br><h1 class="gfont">Top Students</h1>
+            <div class="col-lg-9 flow_chart wow bounceInLeft" data-wow-duration="2s" 
+                 data-wow-delay=".5s">
+                <h3 class="gfont">Top-10 Students in CodeClub:</h3> </br>
+                <div class="row">
+                    <div class="col-md-9 hidden-xs" style="padding-left:30px;">
+                   
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 97%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">1</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 90%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">2</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 85%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">3</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 80%;">
+                              <span class="sr-only">83% Complete</span>
+                                <p class="par">4</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 75%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">5</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 70%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">6</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 65%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">7</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 55%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">8</p>
+                            </div>
+                          </div>
+                        
+                          <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 51%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">9</p>
+                            </div>
+                          </div>
+                
+                        <div class="progress progress-bar-vertical">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-
+                                 valuemax="100"
+                                 style="height: 40%;">
+                              <span class="sr-only">60% Complete</span>
+                                <p class="par">10</p>
+                            </div>
+                          </div>
+                    </div><!-- end of bar div-->
+                    <div class="col-md-3 ">
+                        <h5><h4 >Student Names:</h4></h5>
+                        <ol>
+                            <li>Ali Salem.</li>
+                            <li>Sara Younis.</li>
+                            <li>Salam Zahdeh.</li>
+                            <li>Naji Ibraheem.</li>
+                            <li>Shaza Naser.</li>
+                            <li>Ali Salem.</li>
+                            <li>Sara Younis.</li>
+                            <li>Salam Zahdeh.</li>
+                            <li>Naji Ibraheem.</li>
+                            <li>Shaza Naser.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4 visible-md"></div>
+        <div class="col-md-3 stdOfYear wow bounceInRight" data-wow-duration="2s"
+             data-wow-delay=".5s">
+            <h4 class="gfont">Student of the year</h4>
+            <img src="images/student.jpg" alt="student" class="stdImg">
+            <p>
+              <h4 class="gfont">Yousef Jbour.</h4>
+              <span class="gfont">125 pts.</span>
+            </p>
+        </div><!--student of the year -->
+        </div>
+    </div>
+</section>
+    <div class="clearfix"></div>
+    <!--************************* End top 5  ************************ -->
+    
+    <!--************************* Start Event Section  ************************ -->
+<a name="nxtEvntAnchor"></a>
+<section class="event text-center">
+    <div class="container">
+        <h1 class="gfont">CodeClub Events</h1>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 wow zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                    <h3 class="panel-title">Drawing</h3>
+                    </div>
+                     <div class="panel-body text-center">
+                       <div class="row">
+                           <div class="col-md-8 eventBox">
+                               <p><span>Date: </span>17 Feb 2016.</p>
+                               <p><span>Hour: </span>11:00 am.</p>
+                               <p><span>Points: </span>25 pts.</p>
+                               <p><span>Discreption: </span></p>
+                               <p>As a part of smart homes, a subsystem consisting of three components including a neural network is designed to provide personalized services. Unique factor combinations of building specifics, user profiles and external influences lead to the necessity of self-adaptive systems for personal comfort. The system supports room temperature control in order to heat rooms energy.</p>
+                               <button class="btn btn-success btn-block">Join Event</button> 
+                           </div>
+                           <div class="col-md-4 eventBox">
+                               <img src="images/events/drawing.jpg" alt="event picture">
+                           </div>
+                           <div class="clear-fix">
+                           
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div> 
+            </div> <!-- End of first Event-->
+        
+    
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 wow zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Sport</h3>
+                        </div>
+                         <div class="panel-body text-center">
+                           <div class="row">
+                               <div class="col-md-8 eventBox">
+                                   <p><span>Date: </span>17 Feb 2016.</p>
+                                   <p><span>Hour: </span>11:00 am.</p>
+                                   <p><span>Points: </span>25 pts.</p>
+                                   <p><span>Discreption: </span></p>
+                                   <p>As a part of smart homes, a subsystem consisting of three components including a neural network is designed to provide personalized services. Unique factor combinations of building specifics, user profiles and external influences lead to the necessity of self-adaptive systems for personal comfort. The system supports room temperature control in order to heat rooms energy.</p>
+                                 <button class="btn btn-success btn-block">Join Event</button>  
+                               </div>
+                               <div class="col-md-4 eventBox">
+                                   <img src="images/events/ball.jpg" alt="event picture">
+                               </div>
+                               <div class="clear-fix">
+
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div> 
+            </div><!-- End of Second Event-->
+        
+            <!--******************  Old Events  ****************-->
+            <a name="oldEvntAnchor"></a>
+            <h1 class="gfont">Old Events</h1>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 wow zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Game Challenges</h3>
+                        </div>
+                         <div class="panel-body text-center">
+                           <div class="row">
+                               <div class="col-md-8 eventBox">
+                                   <p><span>Date: </span>17 Feb 2016.</p>
+                                   <p><span>Hour: </span>11:00 am.</p>
+                                   <p><span>Points: </span>25 pts.</p>
+                                   <p><span>Discreption: </span></p>
+                                   <p>As a part of smart homes, a subsystem consisting of three components including a neural network is designed to provide personalized services. Unique factor combinations of building specifics, user profiles and external influences lead to the necessity of self-adaptive systems for personal comfort. The system supports room temperature control in order to heat rooms energy.</p>
+                                  
+                               </div>
+                               <div class="col-md-4 eventBox">
+                                   <img src="images/events/games.jpg" alt="event picture">
+                               </div>
+                               <div class="clear-fix">
+
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                </div><!-- End of Second Event-->
+                
+        
+        </div>
+    </div>
+</section>
+    <!--************************* End Event Section  ************************ -->
+    
+   
+<!-- Start Section footer   -->
+<section class="footer hinge">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4  col-sm-6 col-xs-12">
+                <h3>Site map</h3>
+                <ul class="list-unstyled three-cols">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Company</li></a>
+                <a href="#"><li>Code</li></a>
+                <a href="#"><li>Design</li></a>
+                <a href="#"><li>Host</li></a>
+                <a href="#"><li>Solutions</li></a>
+                <a href="#"><li>Site map</li></a>
+                <a href="#"><li>Contact</li></a>
+                </ul>
+                <ul class="list-unstyled social-cols">
+                <li><a href="#"><i class="fa fa-facebook-square mn z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square mn1 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-rss mn3 z" ></i></a></li>    
+                <li><a href="#"><i class="fa fa-youtube-square mn2 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square mn3 z" ></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 article">
+                <h3>Latest Articles</h3>
+                <ul class="list-unstyled">
+                <a href="#"><li><img src="images/footer/f1.jpg" class="img-circle"><span>Gaza Children.
+                    </a></span></li>
+                <a href="#"><li><img src="images/footer/f3.jpg" class="img-circle"><span>Gaza Stripe.
+                    </span></li></a>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 latest-work">
+            <h3>Our Latest Events</h3>
+                <table class="footer-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="images/footer/scenic.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="images/footer/eco.jpg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="#"><img src="images/footer/safety.jpg"></a>
+                        </td>
+                        <td>
+                        <a href="#"><img src="images/footer/speed.jpg"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+<div class="text-center cpyright">
+    <span >All Right Reserved &copy; <b> Y.Jbour</b>  2016</span>
+</div>
+
+<!-- End Section footer   -->
+
+<!-- Start Section loading   >
+<section class="loading">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+</section>
+
+
+<!-- End Section loading   -->
+
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/myScript.js"></script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/smoothscroll.js"></script>
+
+<script src="javascripts/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "razan_mahmoud",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "mongodb": "^2.2.5",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "codeclub project",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RazanMahmoud/CodeClub.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "angularjs"
+  ],
+  "author": "razan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RazanMahmoud/CodeClub/issues"
+  },
+  "homepage": "https://github.com/RazanMahmoud/CodeClub#readme"
+}

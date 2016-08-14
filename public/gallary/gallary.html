@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- IE_meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--mobile compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+
+    <!-- Start Css3 slider -->
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <!-- End Css3 slider -->
+   
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/style2.css"/>
+    <link rel="stylesheet" href="../css/rtl.css"/>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!-- links for light box gallary -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+  <a name="homeAnchor"></a>
+    <!-- ****************************  Start NavBar *****************-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container gfont">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#My_nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="braces">&#123;</span>Code<span>Club</span><span class="braces">&#125;</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="My_nav">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="../index.html" class="smoothScroll">Home<span class="sr-only">(current)</span>
+            </a></li>
+        <li><a href="../index.html#stdAnchor" class="smoothScroll">Student</a></li>
+        <li><a href="../index.html#nxtEvntAnchor" class="smoothScroll">Events</a></li>
+        <li class="active"><a href="gallary.html">Gallary</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+             aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">login</a></li>
+            <li><a href="#">my profile</a></li>
+          </ul>
+        </li>
+        <li><a href="../contact/contact.html">Contact</a></li> 
+        <li class="visible-xs"><a href="../index_ar.html">العربية</a></li> 
+        <!--li>
+        <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+        </form>
+        </li-->
+      </ul>
+      <div class="l-nav hidden-xs">
+          <a href="../index_ar.html"><img src="../images/lang/Saudi-Arabia-Flag-icon.png"></br>العربية</a>
+     </div>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- ****************************  End NavBar *****************-->
+    <!--************ Login Modal *************-->
+        <div class="modal fade" tabindex="-1" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+            <h3>Login to CodeClub.com</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action='' name="login_form">
+              <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+              <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
+              <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            New To CodeClub.com?
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <!--************ END Login Modal *************-->
+    
+    <!--************ Start Image gallary *************-->
+    <section class="_gallary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <!-- Gallary code ********* --> 
+                    <!--  Event 1 -->
+                    <h1 class="gfont">Event 1</h1>
+                    <div id="links">
+                    <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>  
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <!--  Event 2****************-->    
+                    <h1 class="gfont">Event 2</h1>
+                    <div id="links">
+                    <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>  
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                     <a href="img/1.jpg" title="Banana"  data-gallery>
+                          <img src="img/1.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/2.jpg" style="width:600px;height:600px" title="Apple" data-gallery>
+                        <img src="img/2.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                    <a href="img/4.jpg"  title="Orange" data-gallery>
+                        <img src="img/4.jpg" style="width:66px;height:66px;" alt="img">
+                    </a>
+                        
+                        
+                </div>
+
+                    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                    <div class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body next"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left prev">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary next">
+                                        Next
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>    
+    </section>
+    <!--************ End Image gallary *************-->
+     
+    
+
+    
+    
+       
+<!-- Start Section footer   -->
+<section class="footer hinge">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4  col-sm-6 col-xs-12">
+                <h3>Site map</h3>
+                <ul class="list-unstyled three-cols">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Company</li></a>
+                <a href="#"><li>Code</li></a>
+                <a href="#"><li>Design</li></a>
+                <a href="#"><li>Host</li></a>
+                <a href="#"><li>Solutions</li></a>
+                <a href="#"><li>Site map</li></a>
+                <a href="#"><li>Contact</li></a>
+                </ul>
+                <ul class="list-unstyled social-cols">
+                <li><a href="#"><i class="fa fa-facebook-square mn z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square mn1 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-rss mn3 z" ></i></a></li>    
+                <li><a href="#"><i class="fa fa-youtube-square mn2 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square mn3 z" ></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 article">
+                <h3>Latest Articles</h3>
+                <ul class="list-unstyled">
+                <a href="#"><li><img src="../images/footer/f1.jpg" class="img-circle"><span>Gaza Children.
+                    </a></span></li>
+                <a href="#"><li><img src="../images/footer/f3.jpg" class="img-circle"><span>Gaza Stripe.
+                    </span></li></a>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 latest-work">
+            <h3>Our Latest Events</h3>
+                <table class="footer-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="../images/footer/scenic.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="../images/footer/eco.jpg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="#"><img src="../images/footer/safety.jpg"></a>
+                        </td>
+                        <td>
+                        <a href="#"><img src="../images/footer/speed.jpg"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+<div class="text-center cpyright">
+    <span >All Right Reserved &copy; <b> Y.Jbour</b>  2016</span>
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myScript.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

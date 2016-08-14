@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- IE_meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--mobile compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+
+    <!-- Start Css3 slider -->
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <!-- End Css3 slider -->
+   
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/style2.css"/>
+    <link rel="stylesheet" href="../css/rtl.css"/>
+    <link rel="stylesheet" href="../css/media.css"/>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+  
+
+    <script src="../js/jquery-1.11.2.min.js"></script>
+
+    
+</head>
+<body>
+    <!-- ****************************  Start NavBar *****************-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container gfont">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#My_nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="braces">&#123;</span>Code<span>Club</span><span class="braces">&#125;</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="My_nav">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="../index.html" class="smoothScroll">Home<span class="sr-only">(current)</span>
+            </a></li>
+        <li><a href="../index.html#stdAnchor" class="smoothScroll">Student</a></li>
+        <li><a href="../index.html#nxtEvntAnchor" class="smoothScroll">Events</a></li>
+        <li><a href="../gallary/gallary.html">Gallary</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+             aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">login</a></li>
+            <li><a href="#">my profile</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="contact.html">Contact</a></li> 
+        <li class="visible-xs"><a href="../index_ar.html">العربية</a></li> 
+        <!--li>
+        <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+        </form>
+        </li-->
+      </ul>
+      <div class="l-nav hidden-xs">
+          <a href="../index_ar.html"><img src="../images/lang/Saudi-Arabia-Flag-icon.png">
+              </br>العربية</a>
+     </div>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- ****************************  End NavBar *****************-->
+    <!--************ Login Modal *************-->
+        <div class="modal fade" tabindex="-1" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+            <h3>Login to CodeClub.com</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action='' name="login_form">
+              <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+              <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
+              <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            New To CodeClub.com?
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+   
+    <!--************ Login Modal *************-->
+   
+    <!-- Start Section ContactUs   -->
+
+<section class="contact_us">
+    <div class="contact_hov">
+        <div class="container text-center">
+            <div class="row">
+                <i class="fa fa-headphones fa-5x"></i>
+                <h1>Tell Us What You Feel</h1>
+                <p class="lead">Your Message will be replied within 24h.</p>
+
+                <!-- Start contact Us Form -->
+                <form role="form">
+                    <div class="col-lg-6 wow bounceInLeft" data-wow-duration="1s"
+                         data-wow-delay=".5s">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Username.">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Email.">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Cell Phone.">
+                        </div>
+                     </div>
+                     <div class="col-lg-6 wow bounceInRight" data-wow-duration="1s"
+                          data-wow-delay=".5s">
+                        <div class="form-group">
+                         <textarea class="form-control input-lg" placeholder="Your Message . ."></textarea>
+                         </div>
+                         <button type="button" class="btn btn-info btn-lg inline-block btn-block">Contact
+                             Us</button>
+                    
+                     </div>
+                </form>
+                <!-- End contact Us Form -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Section ContactUs   -->
+
+    
+       
+<!-- Start Section footer   -->
+<section class="footer hinge">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4  col-sm-6 col-xs-12">
+                <h3>Site map</h3>
+                <ul class="list-unstyled three-cols">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Company</li></a>
+                <a href="#"><li>Code</li></a>
+                <a href="#"><li>Design</li></a>
+                <a href="#"><li>Host</li></a>
+                <a href="#"><li>Solutions</li></a>
+                <a href="#"><li>Site map</li></a>
+                <a href="#"><li>Contact</li></a>
+                </ul>
+                <ul class="list-unstyled social-cols">
+                <li><a href="#"><i class="fa fa-facebook-square mn z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square mn1 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-rss mn3 z" ></i></a></li>    
+                <li><a href="#"><i class="fa fa-youtube-square mn2 z" ></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square mn3 z" ></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 article">
+                <h3>Latest Articles</h3>
+                <ul class="list-unstyled">
+                <a href="#"><li><img src="../images/footer/f1.jpg" class="img-circle"><span>Gaza Children.
+                    </a></span></li>
+                <a href="#"><li><img src="../images/footer/f3.jpg" class="img-circle"><span>Gaza Stripe.
+                    </span></li></a>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 latest-work">
+            <h3>Our Latest Events</h3>
+                <table class="footer-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="../images/footer/scenic.jpg"></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="../images/footer/eco.jpg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="#"><img src="../images/footer/safety.jpg"></a>
+                        </td>
+                        <td>
+                        <a href="#"><img src="../images/footer/speed.jpg"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+<div class="text-center cpyright">
+    <span >All Right Reserved &copy; <b> Y.Jbour</b>  2016</span>
+</div>
+
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myScript.js"></script>
+<script src="../js/smoothscroll.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
