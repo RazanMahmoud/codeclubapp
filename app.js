@@ -18,6 +18,7 @@ var db = mongoose.connection;
 var app = express();
 var routes = require('./routes/index');
 var users = require('./routes/users');
+//var admin = require('./routes/admin');
 
 
 // View Engine
@@ -78,6 +79,8 @@ app.use(function (req, res, next) {
 
 app.use('/', routes);
 app.use('/users', users);
+//app.use('/admin', admin);
+
 
 
 module.exports = app;
