@@ -1,11 +1,15 @@
 var express = require('express');
 var router = express.Router();
-
+var session = require('express-session');
 var Event = require('../model/users');
+var User = require('../model/users');
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
-  res.render('index');
+
+	//res.write('<h1>Hello '+  ".." +'</h1>');
+
+ res.render('index');
 });
 //events
 router.get('/newevent', ensureAuthenticated, function(req, res){

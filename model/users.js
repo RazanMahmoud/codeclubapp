@@ -1,30 +1,36 @@
 var mongoose = require('mongoose')
 ,Schema = mongoose.Schema ;
 var bcrypt = require('bcryptjs');
-
+var session = require('express-session');
 var usersSchema = Schema({
   username: String,
   email: String,
   password: String,
   role: { type: Number, default: 1 },
   points: { type: Number, default: 0 },
-  date: { type: Date, default: Date.now },
-  events: [{ type: Schema.Types.ObjectId, ref: 'Event' }]
+  date: { type: Date, default: Date.now }
 
 });
 
 var eventSchema = Schema({
   name: String,
+  user_id:[{ type: Schema.Types.ObjectId, ref: 'User' }],
       description: String,
       points: Number,
       date: { type: Date, default: Date.now },
       event_date: String,
       event_time: String,
-      joined: {}
 
 })
+
+/*var join_eventSchema = Schema({
+ userID:[{ type: Schema.Types.ObjectId, ref: 'User' }],
+ EventID: [{ type: Schema.Types.ObjectId, ref: 'Event' }]
+}); */
+
 var User = module.exports = mongoose.model('User', usersSchema);
 var Event = module.exports = mongoose.model('Event', eventSchema);
+//var Join = module.exports = mongoose.model('Join', join_eventSchema);
 
 module.exports.createUser = function(newUser, callback){
   bcrypt.genSalt(10, function(err, salt) {
@@ -54,3 +60,5 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
 module.exports.createEvent = function(newEvent, callback){
   newEvent.save(callback);
 }
+
+
