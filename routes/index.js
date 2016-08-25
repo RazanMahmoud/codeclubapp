@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var session = require('express-session');
 var Event = require('../model/users');
-var User = require('../model/users');
+//var User = require('../model/users');
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
